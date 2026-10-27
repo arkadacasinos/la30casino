@@ -1,0 +1,80 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@theme inline {
+  --font-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-primary: #e01267;
+  --color-primary-hover: #f02578;
+  --color-dark-bg: #0b0312;
+  --color-panel: #140720;
+  --color-card-dark: #190a2a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0b0312;
+    color: #f4effa;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .z9k2-header {
+    background-color: #0b0312;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .z9k2-btn-register {
+    background: linear-gradient(135deg, #e01267 0%, #fa2d7e 100%);
+    box-shadow: 0 4px 18px rgba(224, 18, 103, 0.4);
+    transition: all 0.2s ease-in-out;
+  }
+  .z9k2-btn-register:hover {
+    background: linear-gradient(135deg, #eb1a71 0%, #ff428d 100%);
+    box-shadow: 0 6px 24px rgba(224, 18, 103, 0.6);
+    transform: translateY(-1px);
+  }
+  .z9k2-btn-login {
+    background-color: #1a0a2c;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.2s ease-in-out;
+  }
+  .z9k2-btn-login:hover {
+    background-color: #240e3d;
+    border-color: rgba(224, 18, 103, 0.5);
+  }
+  .z9k2-ticker-card {
+    background: rgba(18, 7, 30, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+  }
+  .z9k2-multiplier-chip {
+    background: #0d281e;
+    color: #2fe093;
+    border: 1px solid rgba(47, 224, 147, 0.25);
+  }
+  .z9k2-multiplier-star {
+    background: #471a06;
+    color: #ff8a3d;
+    border: 1px solid rgba(255, 138, 61, 0.3);
+  }
+  .z9k2-seo-card {
+    background: #140722;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .z9k2-tag {
+    background: rgba(224, 18, 103, 0.1);
+    border: 1px solid rgba(224, 18, 103, 0.25);
+    color: #ff70a5;
+    transition: all 0.2s ease;
+  }
+  .z9k2-tag:hover {
+    background: rgba(224, 18, 103, 0.2);
+    color: #ffffff;
+    border-color: #e01267;
+  }
+}
