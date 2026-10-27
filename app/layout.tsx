@@ -10,6 +10,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className="bg-[#0b0312]">
       <head>
+        <meta name="yandex-verification" content="6e1fe97894dbb5ef" />
         <meta charSet="utf-8" />
         <title>La Casino (Ля Казино) официальный сайт – зеркало рабочее вход и играть онлайн</title>
         <meta
